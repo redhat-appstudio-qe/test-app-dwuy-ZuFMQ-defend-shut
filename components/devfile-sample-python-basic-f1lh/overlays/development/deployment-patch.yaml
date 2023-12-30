@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-f1lh
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-npfr-tenant/test-app-dwuy/devfile-sample-python-basic-f1lh@sha256:710c931510c5ad237ec1bdcdc372b9da4b283d28a9ad6a8fc098cf306903e07e
+        name: my-python
+        resources: {}
+status: {}
